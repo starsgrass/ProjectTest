@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset = "utf-8">
+                <title>
+                        hello world
+                </title>
+                <script type = "text/javascript">
+                        window.onload = function()
+                        {
+                                let oBtn = document.getElementById("btn");
+                                let oPra = document.getElementById("p0");
+                                let number_0 = parseNumber(oPra.textContent);
+                                oBtn.onclick = function()
+                                {
+                                        oPra.textContent = number_0 + 1;
+                                        alert("finished!");
+                                }
+                        }
+                </script>
+        </head>
+        <body>
+                <button id = "btn">click this button to plus 1</button>
+                <p id = "p0">0</p>
+        </body>
+</html>
